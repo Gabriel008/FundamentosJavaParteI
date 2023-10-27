@@ -10,7 +10,9 @@
  */
 public class HolaMundo {
     public static void main(String args[]){
-    System.out.println("HelloWord!!!!");
+
+        int miVariableEntera=10;
+        System.out.println(miVariableEntera);
     }
     
     
