@@ -33,6 +33,16 @@ public class HolaMundo {
         var miVariableCadena2 = "Nueva Cadena en variable var";
             System.out.println("miVariableCadena2: "+miVariableCadena2);
             System.out.println("soutv miVariableCadena2 = " +  miVariableCadena2);
+            
+            //Reglas para definir variables
+            //Variable no iniciar ni con numeros, Mayusculas al inicio o caracteres especiales excepto _
+            
+            //Valores permitidos:
+            var miVariable=1;
+            var _miVariable=1;
+            var $miVariable=1;
+           // var áVariable=5; // no se recomienda usar tildes
+           // var #Variable=5; // no se caracvteres caracteres especiales
     }
     
     
