@@ -9,41 +9,19 @@
  * @author gabri
  */
 public class HolaMundo {
-    public static void main(String args[]){
-        //Definimos la variable    
-        int miVariableEntera=10;
-        System.out.println(miVariableEntera);
-        
-        //Modificamos el valor de la variable
-        miVariableEntera = 5;
-        System.out.println(miVariableEntera);
-        
-        String miVariableCadena = "Saludos";
-        
-        System.out.println(miVariableCadena);
-        
-        miVariableCadena = "Adios";
-        System.out.println(miVariableCadena);
-        
-        //var - inferencia de tipos en JAVA
-        
-        var miVariableEntera2 = 15;
-        System.out.println(miVariableEntera2);
-        
-        var miVariableCadena2 = "Nueva Cadena en variable var";
-            System.out.println("miVariableCadena2: "+miVariableCadena2);
-            System.out.println("soutv miVariableCadena2 = " +  miVariableCadena2);
+
+    public static void main(String args[]) {
+        var usuario = "Juan";
+        var titulo = "Ingeniero";
+        var union = titulo + " " + usuario;
+        System.out.println("union = " + union);
             
-            //Reglas para definir variables
-            //Variable no iniciar ni con numeros, Mayusculas al inicio o caracteres especiales excepto _
-            
-            //Valores permitidos:
-            var miVariable=1;
-            var _miVariable=1;
-            var $miVariable=1;
-           // var áVariable=5; // no se recomienda usar tildes
-           // var #Variable=5; // no se caracvteres caracteres especiales
+        var i=3.5;
+        var j=4;
+        
+        System.out.println(i+j); //Se raliza la suma de numeros
+        System.out.println(i+j+usuario);//Evaliacion de izquierda a derecha
+        System.out.println(usuario+i+j);//Contecto cadena, todo es una cadena
+        System.out.println(usuario+(i+j));//uso de parentesis modifican la prioridad en la evaluacion
     }
-    
-    
 }
