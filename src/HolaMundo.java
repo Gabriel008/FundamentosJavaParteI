@@ -14,13 +14,13 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        System.out.println("Escribe tu nombre: ");
-        Scanner consola = new Scanner(System.in);
-        var usuario = consola.nextLine();
-        System.out.println("Usuario: " + usuario);
-        System.out.println("Escribe el Titulo: ");
-        var titulo = consola.nextLine();
-        System.out.println("Resultado: "+titulo+ " " + usuario);
+        /*
+            tipos primitivos entero: byte (8 bits), short (16 bits), int (32 bits), long (64 bits)
+        */
+       byte numeroByte = (byte)129;
+        System.out.println("Valor byte: "+ numeroByte); 
+        System.out.println("Valor minimo byte: "+Byte.MIN_VALUE); 
+        System.out.println("Valor maximo byte: "+Byte.MAX_VALUE); 
         
     }
 }
