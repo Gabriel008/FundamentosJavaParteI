@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 //Mi clase JAVA
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -11,12 +14,13 @@
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var nombre = "Karla";
-        System.out.println("Nueva linea: \n"+ nombre); // Salto de linea -> \n
-        System.out.println("Tabulador: \t"+ nombre); // Tabulador -> \t
-        System.out.println("Retroceso: \b\b"+ nombre); // Retroceso -> \b
-        System.out.println("Comilla Simple: \'"+ nombre +"'"); // Comilla Simple -> \'
-        System.out.println("comilla Doble: \""+ nombre +"\""); // Comilla Doble -> \"
+        System.out.println("Escribe tu nombre: ");
+        Scanner consola = new Scanner(System.in);
+        var usuario = consola.nextLine();
+        System.out.println("Usuario: " + usuario);
+        System.out.println("Escribe el Titulo: ");
+        var titulo = consola.nextLine();
+        System.out.println("Resultado: "+titulo+ " " + usuario);
         
     }
 }
