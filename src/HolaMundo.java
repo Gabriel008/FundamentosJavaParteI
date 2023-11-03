@@ -14,13 +14,42 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var numeroEntero = 10;
-        System.out.println("numeroEntero = " + numeroEntero);
+        char miCaracter = 'a';
+        System.out.println("miCaracter = " + miCaracter);
         
-        var numeroDouble = 10.0;
-        System.out.println("numeroDouble = " + numeroDouble);
+       // unicode
+       char varChar = '\u0021';
+        System.out.println("varChar = " + varChar);
         
-        var numeroFloat = 10.0F;
-        System.out.println("numeroFloat = " + numeroFloat);
+       // varChar Decimal
+       char varCharDecimal = 33;
+       System.out.println("varCharDecimal = " + varCharDecimal);    
+        
+       // varChar Simbolo
+       char varCharSimbolo = '!';
+       System.out.println("varCharSimbolo = " + varCharSimbolo);    
+        
+        
+        
+       // unicode
+       var varChar1 = '\u0021';
+        System.out.println("\nvarChar1 = " + varChar1);
+        
+       // varChar Decimal
+       var varCharDecimal2 = (char)33;
+       System.out.println("varCharDecimal2 = " + varCharDecimal2);    
+        
+       // varChar Simbolo
+       var varCharSimbolo3 = '!';
+       System.out.println("varCharSimbolo3 = " + varCharSimbolo3);    
+       
+       
+       
+       int variableEnteraSimbolo='!'; 
+       System.out.println("\nvariableEnteraSimbolo = " + variableEnteraSimbolo);
+       
+       int letra='a';
+        System.out.println("letra = " + letra);
+    
     }
 }
