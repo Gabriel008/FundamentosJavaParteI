@@ -14,42 +14,28 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        char miCaracter = 'a';
-        System.out.println("miCaracter = " + miCaracter);
-        
-       // unicode
-       char varChar = '\u0021';
-        System.out.println("varChar = " + varChar);
-        
-       // varChar Decimal
-       char varCharDecimal = 33;
-       System.out.println("varCharDecimal = " + varCharDecimal);    
-        
-       // varChar Simbolo
-       char varCharSimbolo = '!';
-       System.out.println("varCharSimbolo = " + varCharSimbolo);    
-        
-        
-        
-       // unicode
-       var varChar1 = '\u0021';
-        System.out.println("\nvarChar1 = " + varChar1);
-        
-       // varChar Decimal
-       var varCharDecimal2 = (char)33;
-       System.out.println("varCharDecimal2 = " + varCharDecimal2);    
-        
-       // varChar Simbolo
-       var varCharSimbolo3 = '!';
-       System.out.println("varCharSimbolo3 = " + varCharSimbolo3);    
-       
-       
-       
-       int variableEnteraSimbolo='!'; 
-       System.out.println("\nvariableEnteraSimbolo = " + variableEnteraSimbolo);
-       
-       int letra='a';
-        System.out.println("letra = " + letra);
+        boolean varBoolean = true;
+        System.out.println("varBoolean = " + varBoolean);
+
+        if (varBoolean) {
+            System.out.println("La bandera es verdadera");
+        } else {
+            System.out.println("La bandera es falsa");
+        }
+            System.out.println("\n|---------------------------------|");
+            System.out.println("|Ingresa Edad:                    |");
+            System.out.println("|---------------------------------|");
+        Scanner consola = new Scanner(System.in);
+        var edad = consola;
     
+        //   var esAdulto = edad >= 18;
+        //    if (esAdulto) {
+            if (edad.nextInt() >= 18) {
+                System.out.println("\nEs mayor de edad");
+            } else {
+                System.out.println("\nEs menor de edad");
+            }
+
+
     }
 }
