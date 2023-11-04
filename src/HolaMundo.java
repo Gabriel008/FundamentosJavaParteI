@@ -11,39 +11,25 @@
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var a = 3;
-        var b = 2;
+        var a = -10;
+        var valorMinimo = 0;
+        var valorMaximo = 10;
 
-        var c = (a == b);
-        System.out.println("c = " + c);
+        var resultado = a >= 0 && a <= 10;//&& ambos deben ser verdaderos para entregar true
 
-        var d = a != b;
-
-        System.out.println("d = " + d);
-
-        var cadena = "Hola";
-        var cadena2 = "Hola";
-        var e = cadena == cadena2;//compara referencias de objetos
-        System.out.println("e = " + e);
-
-        var f = cadena.equals(cadena2);//compara contenido de cadenas
-        System.out.println("f = " + f);
-
-        var g = a >= b;//mayor que (>) ó mayor o igual que (>=)
-        System.out.println("g = " + g);
-
-        if (a % 2 == 0) {
-            System.out.println("Es numero par");
+        if (resultado) {
+            System.out.println("Dentro de rango");
         } else {
-            System.out.println("Es numero impar");
+            System.out.println("Fuera de rango");
         }
 
-        var edad = 10;
-        var adulto = 18;
-        if (edad >= adulto) {
-            System.out.println("Es adulto");
+        var vacaciones = false;
+        var diaDescanso = true;
+
+        if (vacaciones || diaDescanso) { //Ambas deben ser falsas para entregar false
+            System.out.println("Padre puede asistir al juego del hijo");
         } else {
-            System.out.println("Es menor de edad");
+            System.out.println("El padre esta ocupado");
         }
 
     }
