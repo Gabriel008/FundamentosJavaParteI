@@ -9,18 +9,19 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        int alto;
-        int ancho;
+        int numero1;
+        int numero2;
 
         var consola = new Scanner(System.in);
-        System.out.println("Proporciona el alto en metros: ");
-        alto = Integer.parseInt(consola.nextLine());
-        System.out.println("Proporciona el ancho en metros: ");
-        ancho = Integer.parseInt(consola.nextLine());
+        System.out.println("Proporciona el numero1: ");
+        numero1 = Integer.parseInt(consola.nextLine());
+        System.out.println("Proporciona el numero2: ");
+        numero2 = Integer.parseInt(consola.nextLine());
+        
+        var mayor= numero1>=numero2 ? numero1:numero2;
 
         System.out.println("\n1----------------------------------- 1");
-        System.out.println("\tArea: " + (alto * ancho)+"m\u00B2");
-        System.out.println("\tPerimetro: " + ((alto + ancho) * 2)+"m\u00B2");
+        System.out.println("\tEl numero mayor es: " +mayor);
         System.out.println("1----------------------------------- 1");
     }
 }
