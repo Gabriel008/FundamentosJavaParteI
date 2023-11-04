@@ -11,26 +11,12 @@
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var a = -10;
-        var valorMinimo = 0;
-        var valorMaximo = 10;
+        var resultado = (1 > 2) ? "verdaddero" : "Falso"; // prueba logica ? Si es verdadero : Si es falso
+        System.out.println("resultado = " + resultado);
 
-        var resultado = a >= 0 && a <= 10;//&& ambos deben ser verdaderos para entregar true
-
-        if (resultado) {
-            System.out.println("Dentro de rango");
-        } else {
-            System.out.println("Fuera de rango");
-        }
-
-        var vacaciones = false;
-        var diaDescanso = true;
-
-        if (vacaciones || diaDescanso) { //Ambas deben ser falsas para entregar false
-            System.out.println("Padre puede asistir al juego del hijo");
-        } else {
-            System.out.println("El padre esta ocupado");
-        }
+        var numero = 9;
+        resultado = (numero % 2 == 0) ? "Numero Par" : "Numero impar";
+        System.out.println("resultado = " + resultado);
 
     }
 }
