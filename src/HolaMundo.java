@@ -1,5 +1,5 @@
 
-import java.util.Scanner;
+
 
 //Mi clase JAVA
 /*
@@ -13,24 +13,32 @@ import java.util.Scanner;
 public class HolaMundo {
     
     public static void main(String args[]) {
-        var consola = new Scanner(System.in);
-        System.out.println("Proporciona Nombre:  ");
-        String  nombre = consola.nextLine();
-        
-        System.out.println("\nProporciona Id:  ");
-        int id = Integer.parseInt(consola.nextLine());
-        
-        System.out.println("\nProporciona Precio:  ");
-        double precio = Double.parseDouble(consola.nextLine()) ;
-        
-        System.out.println("\nEnvio Gratuito? (true/false)  ");
-        boolean gratuito =Boolean.parseBoolean(consola.nextLine());
-        
-        System.out.println("\n\n|------------------------------------| ");
-        System.out.println("\t"+nombre+" # "+id);
-        System.out.println("\tPrecio: $"+precio);
-        System.out.println("\tEnvio Gratuito: "+gratuito);
-        System.out.println("|------------------------------------| ");
+        int a = 3, b = 2;
+        var resultado = a + b;
+        System.out.println("resultado Suma= " + resultado);
+
+        resultado = a - b;
+        System.out.println("resultado Resta= " + resultado);
+
+        resultado = a * b;
+        System.out.println("resultado Multiplicacion= " + resultado);
+
+        resultado = a / b;
+        System.out.println("resultado division= " + resultado);
+
+        var resultado2 = 3F / b;
+        System.out.println("resultado division= " + resultado2);
+
+        resultado = a % b;
+        System.out.println("resultado modulo= " + resultado);
+
+        if (b % 2 == 0) {
+            System.out.println("Es numero par");
+        } else {
+            System.out.println("Es numero impar");
+        }
+
+
         
     }
 }
