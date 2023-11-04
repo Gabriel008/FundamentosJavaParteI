@@ -13,28 +13,24 @@ import java.util.Scanner;
 public class HolaMundo {
     
     public static void main(String args[]) {
-        // Convertir tipo String a tipo int
-
-        var edad = Integer.parseInt("20");        //Suma el valor
-        //var edad = "20";        //Concatena el valor
-        System.out.println("edad = " + (edad + 1));
+        var consola = new Scanner(System.in);
+        System.out.println("Proporciona Nombre:  ");
+        String  nombre = consola.nextLine();
         
-        var valorPI = Double.parseDouble("3.1416");
-        System.out.println("valorPI = " + valorPI);
-
-        //Pedir un valor
-        var consola =new Scanner(System.in);
-//        System.out.println("Proporciona tu edad: ");
-//        edad = Integer.parseInt(consola.nextLine());
-//        System.out.println("edad = " + edad);
-        var edadTexto = String.valueOf(10);
-        System.out.println("edadTexto = " + edadTexto);
+        System.out.println("\nProporciona Id:  ");
+        int id = Integer.parseInt(consola.nextLine());
         
-        var caracter = "hola".charAt(0);
-        System.out.println("caracter = " + caracter);
+        System.out.println("\nProporciona Precio:  ");
+        double precio = Double.parseDouble(consola.nextLine()) ;
         
-        System.out.println("Proporciona un caracter: ");
-        caracter = consola.nextLine().charAt(0);
-        System.out.println("caracter = " + caracter);
+        System.out.println("\nEnvio Gratuito? (true/false)  ");
+        boolean gratuito =Boolean.parseBoolean(consola.nextLine());
+        
+        System.out.println("\n\n|------------------------------------| ");
+        System.out.println("\t"+nombre+" # "+id);
+        System.out.println("\tPrecio: $"+precio);
+        System.out.println("\tEnvio Gratuito: "+gratuito);
+        System.out.println("|------------------------------------| ");
+        
     }
 }
