@@ -9,9 +9,10 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
+        inicio:
         for (var contador = 0; contador < 10; contador++) {
             if (contador % 2 != 0) {
-                continue; // Ir a la siguiente iteracion
+                continue inicio; // Ir  a la linea de codigo de le etiqueta inicio
             }
             System.out.println("contador = " + contador);
         }
