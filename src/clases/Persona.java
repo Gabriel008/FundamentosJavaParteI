@@ -15,4 +15,8 @@ public class Persona {
         System.out.println("Nombre: " + nombre);
         System.out.println("Apellido: " + apellido);
     }
+    public static void main(String[] args) {
+        
+    }
+    
 }
