@@ -9,28 +9,34 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        //  var numero = 3;
-        System.out.println("Inserte un numero (1-4): ");
+        // var mes = 4;
+        System.out.println("Ingrese numero de mes: ");
+        var estacion = "Estacion Desconocida";
         var consola = new Scanner(System.in);
-        int numero = Integer.parseInt(consola.nextLine());
-        var numeroTexto = "Valor Desconocido";
+        int mes = Integer.parseInt(consola.nextLine());
 
-        switch (numero) {
+        switch (mes) {
             case 1:
-                numeroTexto = "Numero uno";
-                break;
             case 2:
-                numeroTexto = "Numero dos";
+            case 12:
+                estacion = "Invierno";
                 break;
             case 3:
-                numeroTexto = "Numero tres";
-                break;
             case 4:
-                numeroTexto = "Numero cuatro";
+            case 5:
+                estacion = "Primavera";
                 break;
-            default:
-                numeroTexto = "Caso no encontrado";
+            case 6:
+            case 7:
+            case 8:
+                estacion = "Verano";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                estacion = "Otonio";
+                break;
         }
-        System.out.println("numeroTexto = " + numeroTexto);
+        System.out.println("Estacion = " + estacion);
     }
 }
